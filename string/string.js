@@ -28,3 +28,38 @@ bonsoir = bonsoir.split("");
 bonsoir = bonsoir.reverse();
 bonsoir = bonsoir.join("");
 console.log(bonsoir);
+
+// comparaison des chaine de caractere
+
+var alice = "alice";
+var banane = "banane";
+console.log(alice.localeCompare("alice"));
+console.log(alice == "alice");
+console.log(2022 === "2022");
+
+var fruits = ["ananas", "mangue", "guayave", "pqsteque", "papaye"];
+fruits.sort(function (a, b) {
+  return a.localeCompare(b);
+});
+console.log(fruits);
+
+console.log(alice.charAt(10));
+
+console.log(alice[2]);
+
+console.log(alice.indexOf("ce"));
+
+var phrase = "bienvenu a douala";
+console.log(phrase.includes("rue"));
+
+var texFaux = "je ss ma ss mappelle ss jean ss";
+texFaux = texFaux.split("ss");
+texFaux = texFaux.join("");
+console.log(texFaux);
+
+var text1 = "je ss ma ss mappelle ss jean ss";
+text1 = text1.replace("ss", "");
+console.log(text1);
+console.log("alice".toUpperCase());
+
+console.log("ha".repeat(10));
